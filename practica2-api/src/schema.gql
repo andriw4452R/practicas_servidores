@@ -1,0 +1,102 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Donacion {
+  id: Int!
+  id_donante: Int!
+  nombre: String!
+  cantidad: Int!
+  unidad: String!
+  tipo: String!
+}
+
+type Donante {
+  id: Int!
+  nombre: String!
+  tipo: String!
+  correo: String!
+  telefono: String!
+  direccion: String!
+  fecha_registro: String!
+}
+
+type Producto {
+  id: Int!
+  nombre: String!
+  descripcion: String!
+  unidad: String!
+  stock: Int!
+}
+
+type Query {
+  donaciones: [Donacion!]!
+  donacion(id: Int!): Donacion!
+  donantes: [Donante!]!
+  donante(id: Int!): Donante!
+  productos: [Producto!]!
+  producto(id: Int!): Producto!
+}
+
+type Mutation {
+  createDonacion(createDonacionInput: CreateDonacionInput!): Donacion!
+  updateDonacion(updateDonacionInput: UpdateDonacionInput!): Donacion!
+  removeDonacion(id: Int!): Donacion!
+  createDonante(createDonanteInput: CreateDonanteInput!): Donante!
+  updateDonante(updateDonanteInput: UpdateDonanteInput!): Donante!
+  removeDonante(id: Int!): Boolean!
+  createProducto(createProductoInput: CreateProductoInput!): Producto!
+  updateProducto(updateProductoInput: UpdateProductoInput!): Producto!
+  removeProducto(id: Int!): Boolean!
+}
+
+input CreateDonacionInput {
+  id_donante: Int!
+  nombre: String!
+  cantidad: Int!
+  unidad: String!
+  tipo: String!
+}
+
+input UpdateDonacionInput {
+  id_donante: Int
+  nombre: String
+  cantidad: Int
+  unidad: String
+  tipo: String
+  id: Int!
+}
+
+input CreateDonanteInput {
+  nombre: String!
+  tipo: String!
+  correo: String!
+  telefono: String!
+  direccion: String!
+  fecha_registro: String!
+}
+
+input UpdateDonanteInput {
+  nombre: String
+  tipo: String
+  correo: String
+  telefono: String
+  direccion: String
+  fecha_registro: String
+  id: Int!
+}
+
+input CreateProductoInput {
+  nombre: String!
+  descripcion: String!
+  unidad: String!
+  stock: Int!
+}
+
+input UpdateProductoInput {
+  nombre: String
+  descripcion: String
+  unidad: String
+  stock: Int
+  id: Int!
+}
