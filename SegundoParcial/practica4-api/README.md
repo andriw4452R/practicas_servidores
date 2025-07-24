@@ -4,7 +4,7 @@
 
 - Andrés García (Módulo: Donante – TypeScript)
 - Jereny Vera (Módulo: Solicitud – TypeScript)
-- [Integrante 3]
+- Jordy Franco (Módulo: Administrador - TypeScript)
 
 ---
 
@@ -158,25 +158,23 @@ npm run start:dev
 
 #### ✅ Crear Solicitud
 
-![crear](./evidencias/solicitud/WhatsApp Image 2025-07-24 at 00.07.19.jpeg)
+![crear](./evidencias/solicitud/post.jpeg)
 
 #### ✅ Obtener Todos
 
-![todos](./evidencias/solicitud/WhatsApp Image 2025-07-24 at 00.06.50.jpeg)
+![todos](./evidencias/solicitud/get.jpeg)
 
 #### ✅ Obtener por ID
 
-![uno](./evidencias/solicitud/WhatsApp Image 2025-07-24 at 00.06.57.jpeg)
+![uno](./evidencias/solicitud/get.jpeg)
 
 #### ✅ Actualizar Solicitud
 
-![actualizar](./evidencias/solicitud/WhatsApp Image 2025-07-24 at 00.07.30.jpeg)
+![actualizar](./evidencias/solicitud/patch.jpeg)
 
 #### ✅ Eliminar Solicitud
 
-![eliminar](./evidencias/solicitud/WhatsApp Image 2025-07-24 at 00.05.58.jpeg)
-
-> 📂 Coloca estas imágenes dentro de la carpeta `evidencias/` junto al README.md
+![eliminar](./evidencias/solicitud/delete.jpeg)
 
 ---
 
@@ -200,8 +198,6 @@ npm run start:dev
 
 ## 📁 Estructura de carpetas
 
-```
-
 proyecto-servidores/
 │
 
@@ -211,8 +207,6 @@ proyecto-servidores/
 ├── solicitud/ # Microservicio de la lógica de solicitudes
 ├── evidencias/ # Capturas de Postman
 └── README.md
-
-```
 
 ---
 
@@ -244,13 +238,3 @@ proyecto-servidores/
 - NATS
 - Postman (pruebas)
 - TypeScript
-
----
-
-## 👨‍🏫 Docente
-
-[Nombre del profesor] – [Materia]
-
-```
-
-```
